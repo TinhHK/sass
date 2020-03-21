@@ -1,0 +1,19 @@
+$icons: puma, sea-slug, egret, salamander;
+
+@each $icon in $icons {
+	.#{$icon}-icon {
+		background-image: url('images/#{$icon}.png');
+	}
+}
+
+@each $animal, $color, $cursor in
+	(puma, black, default),
+	(sea-slug, blue, pointer),
+	(egret, white, move)
+{
+	.#{$animal}-icon {
+		background-image: url('images/#{$animal}.png');
+		border: 2px solid $color;
+		cursor: $cursor;
+	}
+}

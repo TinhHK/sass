@@ -1,0 +1,78 @@
+/*
+interpolation
+*/
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono&display=swap");
+div.abc div.abc-child a {
+  color: red;
+}
+div.abc div.abc-child a:hover {
+  background-color: green;
+}
+div.abc p {
+  color: green;
+}
+
+/*
+import font style
+*/
+h1 {
+  font-family: "Pangolin", cursive;
+}
+
+h1 {
+  font-size: 5px;
+}
+
+h2 {
+  font-size: 10px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+/*
+ for loop and list
+*/
+h1 {
+  font-size: 40px;
+}
+
+div {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/*
+map and each
+*/
+h1 {
+  font-size: 40px;
+}
+
+div {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}

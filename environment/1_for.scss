@@ -1,0 +1,55 @@
+$color-text: green;
+$class: 'abc';
+$font-head: 'Pangolin', cursive;
+/*
+interpolation
+*/
+div.#{$class} {
+	div.abc-child {
+		a {
+			color: red;
+			&:hover {
+				background-color: $color-text;
+			}
+		} 
+		
+	}
+	p {
+		color: $color-text;
+	}
+}
+
+/*
+import font style
+*/
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono&display=swap');
+h1 {
+	font-family: $font-head;
+}
+@for $i from 1 to 6 {
+	h#{$i} {
+		font-size: 5px * $i;
+	}
+}
+
+/*
+ for loop and list
+*/
+$normalDiv: h1, div, p, h3;
+$fontSize: 40px, 40px, 20px, 20px;
+$len: length($normalDiv);
+@for $i from 1 through $len {
+	#{nth($normalDiv, $i)} {
+		font-size: #{nth($fontSize, $i)}
+	}
+}
+
+/*
+map and each
+*/
+$map: (h1: 40px, div: 40px, p: 20px, h3: 20px);
+@each $key, $val in $map {
+	#{$key} {
+		font-size: #{$val};
+	}
+}
