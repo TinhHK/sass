@@ -1,0 +1,29 @@
+div.abc div.abc-child a {
+  color: red;
+}
+div.abc div.abc-child a:hover {
+  background-color: green;
+}
+div.abc p {
+  color: green;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+p {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 10px;
+}
