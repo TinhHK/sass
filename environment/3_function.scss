@@ -1,0 +1,14 @@
+/*
+	<div> 10 p 10 p 10 p 10 p 10 <div>
+*/
+$column: 		4;
+$columnWidth: 	40px;
+$columnMargin: 	10px;
+@function setWidth($cols, $colWidth, $colMargin) {
+	
+	@return $cols*$colWidth + $colMargin*($cols+1);
+}
+
+div {
+	width: setWidth($column, $columnWidth, $columnMargin);
+}
